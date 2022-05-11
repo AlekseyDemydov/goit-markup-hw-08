@@ -224,7 +224,10 @@ footer {
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    margin-right: 12px;
+    @media screen and (min-width:1200px){
+        margin-right: 12px;
+    }
+    
     color: $background-color;
     padding-left: 16px;
 

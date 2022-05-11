@@ -40,7 +40,7 @@
                 
     }
 
-    @media screen and(min-width:768px){
+    @media (min-width:768px) and (max-width:1200px){
         li:nth-child(-n+2) {
                 margin-right: 30px;
                 margin-bottom: 30px;
@@ -93,6 +93,9 @@
         justify-content: center;
         fill: #AFB1B8;
         width: 170px;
+        @media (min-width:768px) and (max-width:1200px){
+            width: 226px;
+        }
         @media screen and(max-width:768px){
             width: 210px;
         }
