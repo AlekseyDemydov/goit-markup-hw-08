@@ -38,8 +38,8 @@ header {
 
         @media screen and (max-width:768px) {
             position: absolute;
-            top: 100%;
-            left: 0;
+            
+            
             pointer-events: none;
             flex-direction: column;
             padding-top: 42px;
@@ -55,9 +55,13 @@ header {
 
     .backdrop-menu.is-open {
         opacity: 1;
-        top: 0;
-        top: -26px;
-
+        @media screen and (max-width:768px){
+            top: -26px;
+            left: 0;
+        width: 100vw;
+        height: 100vh;
+        }
+        
         transition: opacity 250ms linear;
         pointer-events: visible;
     }
@@ -82,8 +86,9 @@ header {
         }
                 
     @media screen and (max-width:768px) {
-        font-size: 40px;
-        line-height: 47px;
+        font-weight: 500;
+            font-size: 40px;
+            line-height: 47px;
     }
 
     @media screen and(max-width:768px) {
@@ -91,10 +96,7 @@ header {
             margin-bottom: 32px;
         }
 
-        li:last-child {
-            margin-bottom: 302px;
-        }
-
+        
     }
 
     @media screen and (min-width:768px) {
@@ -182,6 +184,9 @@ header {
     @media screen and(max-width:768px) {
         display: flex;
         flex-direction: column-reverse;
+        margin-top: auto;
+        font-style: normal;
+
 
         li:not(:last-child) {
             margin-bottom: 64px;
