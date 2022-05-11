@@ -19,31 +19,45 @@
         <div class="container">
             <a href="./index.html" class="header-logo"><span class="header-logo__web">Web</span><span
                     class="header-logo__studio">Studio</span></a>
-            <nav>
-                <ul class="header-nav">
-                    <li><a href="./index.html" class="header-nav__studio">Студия</a></li>
-                    <li><a href="./portfolio.html" class="header-nav__portfolio header-nav--active">Портфолио</a></li>
-                    <li><a href="" class="header-nav__contacts">Контакты</a></li>
+            <button type="button" class="menu-button" aria-expanded="false" aria-controls="backdrop-menu" data-menu-button>
+                <svg width="40" height="40">
+                    <use class="icon-menu" href="./images/icons.svg#icon-menu_40px"></use>
+                    <use class="icon-cross" href="./images/icons.svg#icon-close_40px"></use>
+                </svg>
+            </button>
+            <div class="backdrop-menu is-hidden" id="backdrop-menu" data-menu>
+                <nav>
+                    <ul class="header-nav">
+                        <li><a href="./index.html" class="header-nav__studio ">Студия</a></li>
+                        <li><a href="./portfolio.html" class="header-nav__portfolio header-nav--active">Портфолио</a></li>
+                        <li><a href="" class="header-nav__contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+                <ul class="header-info">
+                    <li>
+                        <a href="mailto:info@devstudio.com" class="header-info__mail">
+                            <svg width="16" height="12" class="header-info__icon-envelope">
+                                <use href="./images/icons.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
+                    </li>
+                    <li>
+                        <a href="+380961111111" class="header-info__tel">
+                            <svg width="10" height="16" class="header-info__icon-smartphone">
+                                <use href="./images/icons.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
+                    </li>
                 </ul>
-            </nav>
-            <ul class="header-info">
-                <li>
-                    <a href="mailto:info@devstudio.com" class="header-info__mail">
-                        <svg class="header-info__icon-envelope">
-                            <use href="./images/icons.svg#icon-envelope"></use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
-                </li>
-                <li>
-                    <a href="+380961111111" class="header-info__tel">
-                        <svg class="header-info__icon-smartphone">
-                            <use href="./images/icons.svg#icon-smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
+                <ul class="header-link">
+                    <li> <a href=""></a>Instagram</li>
+                    <li><a href=""></a>Twitter</li>
+                    <li><a href=""></a>Facebook</li>
+                    <li><a href=""></a>LinkedIn</li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
@@ -60,7 +74,7 @@
                     <article class="product">
                         <a href="">
                             <div class="product-thumb">
-                                <img src="./images/portfolio/img 1.jpg" alt="Технокряк">
+                                <img src="./images/portfolio/img 1.jpg"  alt="Технокряк" >
                                 <div class="product-overlay">
                                     <div class="product-actions">Ресурс предлагает комплексные предложения с разным уровнем
                                         функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о
@@ -250,28 +264,28 @@
                 <ul class="footer-link">
                     <li>
                         <a class="footer-link__size-icon" href="">
-                            <svg class="footer-link__icon">
+                            <svg width="44" height="44" class="footer-link__icon">
                                 <use href="./images/icons.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li>
                         <a class="footer-link__size-icon" href="">
-                            <svg class="footer-link__icon">
+                            <svg width="44" height="44" class="footer-link__icon">
                                 <use href="./images/icons.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
                     <li>
                         <a class="footer-link__size-icon" href="">
-                            <svg class="footer-link__icon">
+                            <svg width="44" height="44" class="footer-link__icon">
                                 <use href="./images/icons.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li>
                         <a class="footer-link__size-icon" href="">
-                            <svg class="footer-link__icon">
+                            <svg width="44" height="44" class="footer-link__icon">
                                 <use href="./images/icons.svg#icon-in"></use>
                             </svg>
                         </a>
@@ -294,7 +308,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
     </body>
     
