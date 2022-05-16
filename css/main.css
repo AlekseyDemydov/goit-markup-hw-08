@@ -119,6 +119,21 @@ header .container {
   align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  header .menu {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header .menu {
+    display: none;
+  }
+}
+
 header .backdrop-menu {
   display: flex;
   transition: opacity 250ms linear;
@@ -130,8 +145,7 @@ header .backdrop-menu {
 
 @media screen and (min-width: 768px) {
   header .backdrop-menu {
-    justify-content: center;
-    align-items: center;
+    display: none;
   }
 }
 

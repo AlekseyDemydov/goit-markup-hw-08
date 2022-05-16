@@ -16,7 +16,17 @@ header {
         align-items: center;
     }
 
-
+    .menu{
+        @media screen and(min-width:768px) {
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                width: 100%;
+            }
+            @media screen and (max-width:768px){
+                display: none;
+            }
+    }
 
     .backdrop-menu {
         display: flex;
@@ -29,12 +39,9 @@ header {
         z-index: 85;
 
 
-        @media screen and(min-width:768px) {
-            justify-content: center;
-            align-items: center;
-
-
-        }
+       @media screen and (min-width:768px){
+           display: none;
+       }
 
         @media screen and (max-width:768px) {
             position: absolute;
