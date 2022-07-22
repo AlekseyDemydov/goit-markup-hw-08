@@ -107,7 +107,64 @@
       </div>
     </header>
     <main>
-      <include src="./box_section.html"></include>
+      <section class="box-section">
+        <div class="container">
+          <h1 class="box-section__text">Эффективные решения для вашего бизнеса</h1>
+          <button type="button" class="box-section__button" data-modal-open>Заказать услугу</button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button width="30" height="30" class="modal__close-button" data-modal-close>
+                <svg class="modal__size-close-button">
+                  <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+              </button>
+              <form class="modal__form">
+                <h2>Оставьте свои данные, мы вам перезвоним</h2>
+                <div class="form-field">
+                  <label for="name">Имя</label>
+                  <div class="form-field__icon">
+                    <input class="form-field__input" type="text" name="name" id="name" />
+                    <svg width="12" height="12" class="form-field__size-icon">
+                      <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="form-field">
+                  <label for="tel">Телефон</label>
+                  <div class="form-field__icon">
+                    <input class="form-field__input" type="tel" name="tel" id="tel" />
+                    <svg width="13" height="13" class="form-field__size-icon">
+                      <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="form-field">
+                  <label for="mail">Почта</label>
+                  <div class="form-field__icon">
+                    <input class="form-field__input" type="email" name="mail" id="mail" />
+                    <svg width="15" height="12" class="form-field__size-icon">
+                      <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="form-field">
+                  <label for="comment">Комментарий</label>
+                  <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
+                </div>
+                <div class="agree-section">
+                  <label>
+                    <input class="agree-section__checkbox" type="checkbox" name="" value="" />
+                    <span class="agree-section__icon-checkbox"></span>
+                    Соглашаюсь с рассылкой и принимаю
+                    <a href="" class="agree-section__treaty"> Условия договора </a>
+                  </label>
+                </div>
+                <button class="modal__bt-agree" type="submit">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="benefits-section">
         <div class="container">
           <ul>
